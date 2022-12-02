@@ -1,5 +1,4 @@
-import time
-
+import timerModule
 
 line = int(input("Üçgen kenar uzunluğu: "))
 
@@ -21,8 +20,8 @@ def createTriangle(line):
 
 triangle = createTriangle(line)
 
-START_TIME = time.time()
+START_TIME = timerModule.timer()
 print(triangle)
-END_TIME = time.time() - START_TIME
+END_TIME = timerModule.timer() - START_TIME
 
 print("--- %s seconds ---" % (END_TIME))
