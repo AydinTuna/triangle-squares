@@ -1,3 +1,6 @@
+import time
+
+
 line = int(input("Üçgen kenar uzunluğu: "))
 
 
@@ -18,4 +21,8 @@ def createTriangle(line):
 
 triangle = createTriangle(line)
 
+START_TIME = time.time()
 print(triangle)
+END_TIME = time.time() - START_TIME
+
+print("--- %s seconds ---" % (END_TIME))
